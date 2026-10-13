@@ -47,12 +47,12 @@ export function ServiceAreasList() {
           From first walkthrough to final walkthrough — quality craftsmanship
           with clear communication.
         </p>
-        <ul className="mx-auto mt-8 flex max-w-2xl flex-wrap justify-center gap-x-8 gap-y-2">
+        <ul className="mx-auto mt-8 flex max-w-2xl flex-wrap justify-center gap-x-8 gap-y-2 text-center">
           {SERVICES.map((service) => (
-            <li key={service.slug}>
+            <li key={service.slug} className="text-center">
               <Link
                 href={service.href}
-                className="inline-flex min-h-11 items-center font-medium text-brand-accent-text hover:text-brand-accent-text/80"
+                className="inline-flex min-h-11 items-center justify-center text-center font-medium text-brand-accent-text hover:text-brand-accent-text/80"
               >
                 {service.title}
               </Link>

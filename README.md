@@ -24,7 +24,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ## EmailJS Setup
 
 1. Create an account at [emailjs.com](https://www.emailjs.com)
-2. Add an email service connected to `Info@trueridgeconstruct.com`
+2. Add an email service connected to `Jordan@trueridgeconstruction.info`
 3. Create a template with fields: `from_name`, `phone`, `from_email`, `message`
 4. Copy your public key, service ID, and template ID into `.env.local`
 

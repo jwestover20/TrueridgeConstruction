@@ -9,8 +9,8 @@ export const SITE = {
   url: "https://trueridgeconstruction.com",
   phone: "(801) 694-5910",
   phoneHref: "tel:+18016945910",
-  email: "Info@trueridgeconstruct.com",
-  emailHref: "mailto:Info@trueridgeconstruct.com",
+  email: "Jordan@trueridgeconstruction.info",
+  emailHref: "mailto:Jordan@trueridgeconstruction.info",
   serviceArea: "Salt Lake, Utah, and Wasatch Counties",
   social: {
     instagram: "https://www.instagram.com/true_ridge_construction_llc/",

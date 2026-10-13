@@ -21,7 +21,7 @@ NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=
 - Live in `components/forms/ContactForm.tsx` with `"use client"`
 - Use `@emailjs/browser` `sendForm()` — field `name` attrs must match template variables
 - States: idle → sending → success | error
-- On error, show fallback: phone (801) 694-5910 and Info@trueridgeconstruct.com
+- On error, show fallback: phone (801) 694-5910 and Jordan@trueridgeconstruction.info
 - Reset form on success; disable submit button while sending
 - Consider honeypot field for spam; add reCAPTCHA if spam increases
 
