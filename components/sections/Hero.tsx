@@ -29,7 +29,6 @@ export function Hero() {
         aria-hidden
       />
       <div className="absolute inset-0 bg-brand-black/75" />
-      <div className="blueprint-grid absolute inset-0" />
 
       <Container className="relative z-10 py-20 text-center">
         <h1 className="font-heading text-4xl font-semibold tracking-tight text-brand-white sm:text-5xl md:text-6xl">
