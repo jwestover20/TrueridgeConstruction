@@ -75,8 +75,13 @@ export function Footer() {
                   {SITE.email}
                 </a>
               </li>
-              <li className="pt-2 text-brand-white/70">
-                Servicing {SITE.serviceArea}
+              <li className="pt-2">
+                <Link
+                  href="/areas-we-serve"
+                  className="inline-flex min-h-11 items-center text-brand-white/70 hover:text-brand-white"
+                >
+                  Serving {SITE.serviceArea}
+                </Link>
               </li>
             </ul>
           </div>

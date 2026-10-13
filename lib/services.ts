@@ -1,5 +1,19 @@
 import { SITE } from "./constants";
 import { getGoogleReviews } from "./google-reviews";
+import { SERVICE_CITIES, SERVICE_COUNTIES } from "./service-areas";
+
+function getAreaServedSchema() {
+  return [
+    ...SERVICE_COUNTIES.map((county) => ({
+      "@type": "AdministrativeArea" as const,
+      name: `${county.name}, Utah`,
+    })),
+    ...SERVICE_CITIES.map((city) => ({
+      "@type": "City" as const,
+      name: `${city}, Utah`,
+    })),
+  ];
+}
 
 export interface ServiceDetail {
   slug: string;
@@ -97,11 +111,7 @@ export async function getLocalBusinessSchema() {
     url: SITE.url,
     telephone: SITE.phone,
     email: SITE.email,
-    areaServed: [
-      { "@type": "AdministrativeArea", name: "Salt Lake County, Utah" },
-      { "@type": "AdministrativeArea", name: "Utah County, Utah" },
-      { "@type": "AdministrativeArea", name: "Wasatch County, Utah" },
-    ],
+    areaServed: getAreaServedSchema(),
     address: {
       "@type": "PostalAddress",
       addressRegion: "UT",
@@ -138,10 +148,6 @@ export function getServiceSchema(slug: string) {
       telephone: SITE.phone,
       email: SITE.email,
     },
-    areaServed: [
-      { "@type": "AdministrativeArea", name: "Salt Lake County, Utah" },
-      { "@type": "AdministrativeArea", name: "Utah County, Utah" },
-      { "@type": "AdministrativeArea", name: "Wasatch County, Utah" },
-    ],
+    areaServed: getAreaServedSchema(),
   };
 }
